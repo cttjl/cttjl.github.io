@@ -4,4 +4,4 @@ Allow: /
 User-agent: *
 Allow: /
 
-Sitemap: https://你的域名/sitemap.xml
+Sitemap: https://cttjl.github.io/sitemap.xml
