@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>十堰致优网络 | 智能弱电 · 数字安防</title>
+<title>十堰致优网络 | 智能化一站式服务集成商</title>
 <meta name="keywords" content="智能弱电,数字安防,物联网,系统集成">
 <meta name="description" content="十堰致优网络科技专注智能弱电、数字安防与物联网系统集成，提供智慧城市解决方案。">
 <style>
@@ -23,9 +23,9 @@ nav a{color:white;margin:0 1rem;text-decoration:none;}
 .card{background:white;padding:2rem;border-radius:10px;box-shadow:0 4px 12px rgba(0,0,0,0.08);}
 footer{background:#002b80;color:white;text-align:center;padding:3rem 5%;margin-top:4rem;}
 </style>
-<title>十堰致优网络-智能化设计、网络设备调试、服务器运维-官网</title>
-<meta name="keywords" content="智能化设计,十堰网络运维,十堰弱电,监控安装">
-<meta name="description" content="填写公司简介、服务范围，50-150字">
+<title>十堰致优网络-智能化设计、网络设备调试、服务器运维、一站式服务提供商-官网</title>
+<meta name="keywords" content="十堰智能化设计,十堰智能深化设计，十堰网络运维,十堰服务器运维,十堰监控安装，十堰网络调试">
+<meta name="description" content="本单位于2014年在泰弘电脑城设立经营铺面，注册成立张湾区泰弘电脑城致优网络维护中心，初期经营范围为办公设备及网络产品销售，同年9月新增企业服务器与数据安全业务板块；业务范围涵盖安防监控、门禁道闸、公共广播、LED电子屏相关项目，且与海康威视、大华等知名品牌开展深度合作，组建专业团队提供集智能化设计、施工、运维于一体的高品质系统集成服务。">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <script>
 (function(){
@@ -80,7 +80,7 @@ s.parentNode.insertBefore(bp,s);
         ">首页</a>
 
         <!-- 其他页面：只有鼠标悬浮才高亮 -->
-        <a href="service.html" style="
+        <a href="index2.html" style="
             color: #fff;
             text-decoration: none;
             font-size: 18px;
@@ -91,7 +91,7 @@ s.parentNode.insertBefore(bp,s);
         onmouseover="this.style.background='#003d99'"
         onmouseout="this.style.background='transparent'">核心业务</a>
 
-        <a href="case.html" style="
+        <a href="index3.html" style="
             color: #fff;
             text-decoration: none;
             font-size: 18px;
@@ -102,7 +102,7 @@ s.parentNode.insertBefore(bp,s);
         onmouseover="this.style.background='#003d99'"
         onmouseout="this.style.background='transparent'">项目案例</a>
 
-        <a href="contact.html" style="
+        <a href="index4.html" style="
             color: #fff;
             text-decoration: none;
             font-size: 18px;
@@ -167,8 +167,8 @@ s.parentNode.insertBefore(bp,s);
 
     <div style="display: flex; justify-content: center; gap: 60px; flex-wrap: wrap;">
         
-        <!-- 业务1 链接：service1.html 后期替换 -->
-        <a href="service1.html" style="text-decoration:none;">
+        <!-- 业务1 链接：href:目前设置为javascript:;，不做跳转，后期页面做成功后，替换为xxx.html 后期替换 -->
+        <a href="javascript:;" style="text-decoration:none;">
         <div style="
             width: 320px;
             background: #fff;
@@ -189,7 +189,7 @@ s.parentNode.insertBefore(bp,s);
         </a>
 
         <!-- 业务2 链接：service2.html 后期替换 -->
-        <a href="service2.html" style="text-decoration:none;">
+        <a href="javascript:;" style="text-decoration:none;">
         <div style="
             width: 320px;
             background: #fff;
@@ -210,7 +210,7 @@ s.parentNode.insertBefore(bp,s);
         </a>
 
         <!-- 业务3 链接：service3.html 后期替换 -->
-        <a href="service3.html" style="text-decoration:none;">
+        <a href="javascript:;" style="text-decoration:none;">
         <div style="
             width: 320px;
             background: #fff;
@@ -240,13 +240,18 @@ s.parentNode.insertBefore(bp,s);
         
         <!-- 案例 1 -->
         <div style="width: 360px; background: #fff; border-radius: 8px; overflow: hidden; box-shadow: 0 2px 8px rgba(0,0,0,0.1); transition: 0.3s; position: relative;"
-            onmouseover="this.style.transform='translateY(-5px)'; this.style.boxShadow='0 8px 20px rgba(0,0,0,0.15)'; this.querySelector('.detail-btn').style.opacity=1"
-            onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 2px 8px rgba(0,0,0,0.1)'; this.querySelector('.detail-btn').style.opacity=0">
+            onmouseover="this.style.transform='translateY(-5px)'; this.style.boxShadow='0 8px 20px rgba(0,0,0,0.15)'; this.querySelector('.detail-btn').style.opacity=1;this.querySelector('.detail-btn').style.opacity=1;if(this.querySelector('.img-overlay')) this.querySelector('.img-overlay').style.opacity=1;"
+            onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 2px 8px rgba(0,0,0,0.1)'; this.querySelector('.detail-btn').style.opacity=0;this.querySelector('.detail-btn').style.opacity=0;if(this.querySelector('.img-overlay')) this.querySelector('.img-overlay').style.opacity=0;">
             
-            <img src="case1.jpg" style="width:100%; height:220px; object-fit:cover">
+            <!-- 1. 图片容器（加了半透明遮罩层） -->
+  <div style="position: relative;">
+    <img src="img/JDAL/hdc.webp" style="width:100%; height:220px; object-fit:cover">
+    <!-- 半透明遮罩层：默认透明，hover时变黑 -->
+    <div class="img-overlay" style="position:absolute; top:0; left:0; width:100%; height:100%; background:rgba(0,0,0,0.5); opacity:0; transition:0.3s;"></div>
+  </div>
             
             <!-- 查看详情按钮（假链接：后期改 href） -->
-            <a href="case1.html" class="detail-btn" style="position:absolute; top:50%; left:50%; transform:translate(-50%,-50%); background:#2563eb; color:#fff; padding:10px 22px; border-radius:4px; text-decoration:none; opacity:0; transition:opacity 0.3s">查看详情</a>
+            <a href="javascript:;" class="detail-btn" style="position:absolute; top:50%; left:50%; transform:translate(-50%,-50%); background:#2563eb; color:#fff; padding:10px 22px; border-radius:4px; text-decoration:none; opacity:0; transition:opacity 0.3s">查看详情</a>
 
             <div style="padding:20px">
                 <span style="background:#2563eb; color:#fff; padding:4px 12px; border-radius:15px; font-size:14px">商业地产</span>
@@ -257,11 +262,17 @@ s.parentNode.insertBefore(bp,s);
 
         <!-- 案例 2 -->
         <div style="width: 360px; background: #fff; border-radius: 8px; overflow: hidden; box-shadow: 0 2px 8px rgba(0,0,0,0.1); transition: 0.3s; position: relative;"
-            onmouseover="this.style.transform='translateY(-5px)'; this.style.boxShadow='0 8px 20px rgba(0,0,0,0.15)'; this.querySelector('.detail-btn').style.opacity=1"
-            onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 2px 8px rgba(0,0,0,0.1)'; this.querySelector('.detail-btn').style.opacity=0">
+            onmouseover="this.style.transform='translateY(-5px)'; this.style.boxShadow='0 8px 20px rgba(0,0,0,0.15)'; this.querySelector('.detail-btn').style.opacity=1;if(this.querySelector('.img-overlay')) this.querySelector('.img-overlay').style.opacity=1;"
+            onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 2px 8px rgba(0,0,0,0.1)'; this.querySelector('.detail-btn').style.opacity=0;if(this.querySelector('.img-overlay')) this.querySelector('.img-overlay').style.opacity=0;">
             
-            <img src="case2.jpg" style="width:100%; height:220px; object-fit:cover">
-            <a href="case2.html" class="detail-btn" style="position:absolute; top:50%; left:50%; transform:translate(-50%,-50%); background:#2563eb; color:#fff; padding:10px 22px; border-radius:4px; text-decoration:none; opacity:0; transition:opacity 0.3s">查看详情</a>
+            
+             <!-- 1. 图片容器（加了半透明遮罩层） -->
+  <div style="position: relative;">
+    <img src="img/JDAL/sx.jpg" style="width:100%; height:220px; object-fit:cover">
+    <!-- 半透明遮罩层：默认透明，hover时变黑 -->
+    <div class="img-overlay" style="position:absolute; top:0; left:0; width:100%; height:100%; background:rgba(0,0,0,0.5); opacity:0; transition:0.3s;"></div>
+  </div>
+            <a href="javascript:;" class="detail-btn" style="position:absolute; top:50%; left:50%; transform:translate(-50%,-50%); background:#2563eb; color:#fff; padding:10px 22px; border-radius:4px; text-decoration:none; opacity:0; transition:opacity 0.3s">查看详情</a>
 
             <div style="padding:20px">
                 <span style="background:#2563eb; color:#fff; padding:4px 12px; border-radius:15px; font-size:14px">制造业</span>
@@ -272,11 +283,17 @@ s.parentNode.insertBefore(bp,s);
 
         <!-- 案例 3 -->
         <div style="width: 360px; background: #fff; border-radius: 8px; overflow: hidden; box-shadow: 0 2px 8px rgba(0,0,0,0.1); transition: 0.3s; position: relative;"
-            onmouseover="this.style.transform='translateY(-5px)'; this.style.boxShadow='0 8px 20px rgba(0,0,0,0.15)'; this.querySelector('.detail-btn').style.opacity=1"
-            onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 2px 8px rgba(0,0,0,0.1)'; this.querySelector('.detail-btn').style.opacity=0">
+            onmouseover="this.style.transform='translateY(-5px)'; this.style.boxShadow='0 8px 20px rgba(0,0,0,0.15)'; this.querySelector('.detail-btn').style.opacity=1;this.querySelector('.detail-btn').style.opacity=1;if(this.querySelector('.img-overlay')) this.querySelector('.img-overlay').style.opacity=1;"
+            onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 2px 8px rgba(0,0,0,0.1)'; this.querySelector('.detail-btn').style.opacity=0;this.querySelector('.detail-btn').style.opacity=0;if(this.querySelector('.img-overlay')) this.querySelector('.img-overlay').style.opacity=0;">
             
-            <img src="case3.jpg" style="width:100%; height:220px; object-fit:cover">
-            <a href="case3.html" class="detail-btn" style="position:absolute; top:50%; left:50%; transform:translate(-50%,-50%); background:#2563eb; color:#fff; padding:10px 22px; border-radius:4px; text-decoration:none; opacity:0; transition:opacity 0.3s">查看详情</a>
+            <!--<img src="img/JDAL/BLT.jpg" style="width:100%; height:220px; object-fit:cover">-->
+            <!-- 1. 图片容器（加了半透明遮罩层） -->
+  <div style="position: relative;">
+    <img src="img/JDAL/BLT.jpg" style="width:100%; height:220px; object-fit:cover">
+    <!-- 半透明遮罩层：默认透明，hover时变黑 -->
+    <div class="img-overlay" style="position:absolute; top:0; left:0; width:100%; height:100%; background:rgba(0,0,0,0.5); opacity:0; transition:0.3s;"></div>
+  </div>
+            <a href="javascript:;" class="detail-btn" style="position:absolute; top:50%; left:50%; transform:translate(-50%,-50%); background:#2563eb; color:#fff; padding:10px 22px; border-radius:4px; text-decoration:none; opacity:0; transition:opacity 0.3s">查看详情</a>
 
             <div style="padding:20px">
                 <span style="background:#2563eb; color:#fff; padding:4px 12px; border-radius:15px; font-size:14px">园区管理</span>
@@ -287,11 +304,16 @@ s.parentNode.insertBefore(bp,s);
 
         <!-- 案例 4 -->
         <div style="width: 360px; background: #fff; border-radius: 8px; overflow: hidden; box-shadow: 0 2px 8px rgba(0,0,0,0.1); transition: 0.3s; position: relative;"
-            onmouseover="this.style.transform='translateY(-5px)'; this.style.boxShadow='0 8px 20px rgba(0,0,0,0.15)'; this.querySelector('.detail-btn').style.opacity=1"
-            onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 2px 8px rgba(0,0,0,0.1)'; this.querySelector('.detail-btn').style.opacity=0">
+            onmouseover="this.style.transform='translateY(-5px)'; this.style.boxShadow='0 8px 20px rgba(0,0,0,0.15)'; this.querySelector('.detail-btn').style.opacity=1; this.querySelector('.detail-btn').style.opacity=1;this.querySelector('.detail-btn').style.opacity=1;if(this.querySelector('.img-overlay')) this.querySelector('.img-overlay').style.opacity=1;"
+            onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 2px 8px rgba(0,0,0,0.1)'; this.querySelector('.detail-btn').style.opacity=0; this.querySelector('.detail-btn').style.opacity=0;this.querySelector('.detail-btn').style.opacity=0;if(this.querySelector('.img-overlay')) this.querySelector('.img-overlay').style.opacity=0;">
             
-            <img src="case4.jpg" style="width:100%; height:220px; object-fit:cover">
-            <a href="case4.html" class="detail-btn" style="position:absolute; top:50%; left:50%; transform:translate(-50%,-50%); background:#2563eb; color:#fff; padding:10px 22px; border-radius:4px; text-decoration:none; opacity:0; transition:opacity 0.3s">查看详情</a>
+            <!-- 1. 图片容器（加了半透明遮罩层） -->
+  <div style="position: relative;">
+    <img src="img/JDAL/fybjy.jpg" style="width:100%; height:220px; object-fit:cover">
+    <!-- 半透明遮罩层：默认透明，hover时变黑 -->
+    <div class="img-overlay" style="position:absolute; top:0; left:0; width:100%; height:100%; background:rgba(0,0,0,0.5); opacity:0; transition:0.3s;"></div>
+  </div>
+            <a href="javascript:;" class="detail-btn" style="position:absolute; top:50%; left:50%; transform:translate(-50%,-50%); background:#2563eb; color:#fff; padding:10px 22px; border-radius:4px; text-decoration:none; opacity:0; transition:opacity 0.3s">查看详情</a>
 
             <div style="padding:20px">
                 <span style="background:#2563eb; color:#fff; padding:4px 12px; border-radius:15px; font-size:14px">医疗健康</span>
@@ -302,26 +324,37 @@ s.parentNode.insertBefore(bp,s);
 
         <!-- 案例 5 -->
         <div style="width: 360px; background: #fff; border-radius: 8px; overflow: hidden; box-shadow: 0 2px 8px rgba(0,0,0,0.1); transition: 0.3s; position: relative;"
-            onmouseover="this.style.transform='translateY(-5px)'; this.style.boxShadow='0 8px 20px rgba(0,0,0,0.15)'; this.querySelector('.detail-btn').style.opacity=1"
-            onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 2px 8px rgba(0,0,0,0.1)'; this.querySelector('.detail-btn').style.opacity=0">
+            onmouseover="this.style.transform='translateY(-5px)'; this.style.boxShadow='0 8px 20px rgba(0,0,0,0.15)'; this.querySelector('.detail-btn').style.opacity=1; this.querySelector('.detail-btn').style.opacity=1;this.querySelector('.detail-btn').style.opacity=1;if(this.querySelector('.img-overlay')) this.querySelector('.img-overlay').style.opacity=1;"
+            onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 2px 8px rgba(0,0,0,0.1)'; this.querySelector('.detail-btn').style.opacity=0; this.querySelector('.detail-btn').style.opacity=0;this.querySelector('.detail-btn').style.opacity=0;if(this.querySelector('.img-overlay')) this.querySelector('.img-overlay').style.opacity=0;">
             
-            <img src="case5.jpg" style="width:100%; height:220px; object-fit:cover">
-            <a href="case5.html" class="detail-btn" style="position:absolute; top:50%; left:50%; transform:translate(-50%,-50%); background:#2563eb; color:#fff; padding:10px 22px; border-radius:4px; text-decoration:none; opacity:0; transition:opacity 0.3s">查看详情</a>
+            <!-- 1. 图片容器（加了半透明遮罩层） -->
+  <div style="position: relative;">
+    <img src="img/JDAL/wgy.webp" style="width:100%; height:220px; object-fit:cover">
+    <!-- 半透明遮罩层：默认透明，hover时变黑 -->
+    <div class="img-overlay" style="position:absolute; top:0; left:0; width:100%; height:100%; background:rgba(0,0,0,0.5); opacity:0; transition:0.3s;"></div>
+  </div>
+            <a href="javascript:;" class="detail-btn" style="position:absolute; top:50%; left:50%; transform:translate(-50%,-50%); background:#2563eb; color:#fff; padding:10px 22px; border-radius:4px; text-decoration:none; opacity:0; transition:opacity 0.3s">查看详情</a>
 
+            
             <div style="padding:20px">
                 <span style="background:#2563eb; color:#fff; padding:4px 12px; border-radius:15px; font-size:14px">教育行业</span>
-                <h3 style="font-size:20px; margin:12px 0 8px; font-weight:bold">十堰市外国语智慧校园建设</h3>
+                <h3 style="font-size:20px; margin:12px 0 8px; font-weight:bold">十堰市外国语(郧阳校区)智慧校园</h3>
                 <p style="color:#475569; line-height:1.6; font-size:15px">多媒体教室、校园广播、监控系统、校园网络全覆盖</p>
             </div>
         </div>
 
         <!-- 案例 6 -->
         <div style="width: 360px; background: #fff; border-radius: 8px; overflow: hidden; box-shadow: 0 2px 8px rgba(0,0,0,0.1); transition: 0.3s; position: relative;"
-            onmouseover="this.style.transform='translateY(-5px)'; this.style.boxShadow='0 8px 20px rgba(0,0,0,0.15)'; this.querySelector('.detail-btn').style.opacity=1"
-            onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 2px 8px rgba(0,0,0,0.1)'; this.querySelector('.detail-btn').style.opacity=0">
+            onmouseover="this.style.transform='translateY(-5px)'; this.style.boxShadow='0 8px 20px rgba(0,0,0,0.15)'; this.querySelector('.detail-btn').style.opacity=1; this.querySelector('.detail-btn').style.opacity=1;this.querySelector('.detail-btn').style.opacity=1;if(this.querySelector('.img-overlay')) this.querySelector('.img-overlay').style.opacity=1;"
+            onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 2px 8px rgba(0,0,0,0.1)'; this.querySelector('.detail-btn').style.opacity=0; this.querySelector('.detail-btn').style.opacity=0;this.querySelector('.detail-btn').style.opacity=0;if(this.querySelector('.img-overlay')) this.querySelector('.img-overlay').style.opacity=0;">
             
-            <img src="case6.jpg" style="width:100%; height:220px; object-fit:cover">
-            <a href="case6.html" class="detail-btn" style="position:absolute; top:50%; left:50%; transform:translate(-50%,-50%); background:#2563eb; color:#fff; padding:10px 22px; border-radius:4px; text-decoration:none; opacity:0; transition:opacity 0.3s">查看详情</a>
+            <!-- 1. 图片容器（加了半透明遮罩层） -->
+  <div style="position: relative;">
+    <img src="img/JDAL/ZWFW.jpg" style="width:100%; height:220px; object-fit:cover">
+    <!-- 半透明遮罩层：默认透明，hover时变黑 -->
+    <div class="img-overlay" style="position:absolute; top:0; left:0; width:100%; height:100%; background:rgba(0,0,0,0.5); opacity:0; transition:0.3s;"></div>
+  </div>
+            <a href="javascript:;" class="detail-btn" style="position:absolute; top:50%; left:50%; transform:translate(-50%,-50%); background:#2563eb; color:#fff; padding:10px 22px; border-radius:4px; text-decoration:none; opacity:0; transition:opacity 0.3s">查看详情</a>
 
             <div style="padding:20px">
                 <span style="background:#2563eb; color:#fff; padding:4px 12px; border-radius:15px; font-size:14px">政府机关</span>
@@ -399,6 +432,7 @@ s.parentNode.insertBefore(bp,s);
 </section>
 
 <!-- 合作伙伴栏目 终极紧凑版（强制收窄高度） -->
+ <!--
 <style>
 /* 1. 整个板块：完全去掉上下内边距，强制高度最小 */
 .partner-section {
@@ -545,6 +579,7 @@ s.parentNode.insertBefore(bp,s);
     </div>
   </div>
 </section>
+-->
 
 <footer>
   <p>© 2026 十堰致优网络 版权所有 | 智能弱电系统集成服务商</p>
