@@ -211,61 +211,19 @@ s.parentNode.insertBefore(bp,s);
             </div>
         </div>
 
-        <!-- 右侧：地图嵌入
-        <div style="width: 550px; height: 450px; border-radius: 8px; overflow: hidden; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
-            <!-- 这里放你的地图iframe，替换下面的src即可 -->
-            <iframe 
-                src="https://map.baidu.com/" 
-                width="100%" 
-                height="100%" 
-                frameborder="0" 
-                scrolling="no" 
-                marginheight="0" 
-                marginwidth="0">
-            </iframe>
-        </div>
-    </div>  -->
-  <!-- 右侧：地图嵌入（保持你原来的宽高、圆角、阴影不变） -->
+<!-- 右侧：地图嵌入 -->
 <div style="width: 550px; height: 450px; border-radius: 8px; overflow: hidden; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
-  <!-- 地图容器 -->
-  <div id="map" style="width:100%;height:100%;"></div>
+    <!-- 这里放你的地图iframe，替换下面的src即可 -->
+    <iframe
+        src="https://j.map.baidu.com/fd/nh6M"
+        width="100%"
+        height="100%"
+        frameborder="0"
+        scrolling="no"
+        marginheight="0"
+        marginwidth="0">
+    </iframe>
 </div>
-
-<!-- 百度地图API JS（AK已填好） -->
-<script src="https://api.map.baidu.com/api?v=3.0&ak=E23K2yhoD8mnRgewjSF2wi0J9un5BKJ9"></script>
-<script>
-  // 1. 创建地图实例
-  const map = new BMapGL.Map("map");
-
-  // 2. 致优网络维护中心 坐标（十堰市，你可以后续换成更精确的经纬度）
-  const point = new BMapGL.Point(110.796316,32.670758);
-
-  // 3. 初始化地图：中心点 + 缩放级别（18=街道级，足够清晰）
-  map.centerAndZoom(point, 18);
-
-  // 4. 开启滚轮缩放、拖拽
-  map.enableScrollWheelZoom(true);
-
-  // 5. 添加红色标注
-  const marker = new BMapGL.Marker(point);
-  map.addOverlay(marker);
-
-  // 6. 点击标注弹出信息窗口
-  const infoWindow = new BMapGL.InfoWindow(`
-    <div style="padding:10px;">
-      <h4 style="margin:0 0 5px;">致优网络维护中心</h4>
-      <p style="margin:0;font-size:14px;">地址：湖北省十堰市</p>
-    </div>
-  `);
-  marker.addEventListener("click", () => {
-    map.openInfoWindow(infoWindow, point);
-  });
-
-  // 7. 页面加载完成后自动打开信息窗口
-  map.addEventListener("load", () => {
-    map.openInfoWindow(infoWindow, point);
-  });
-</script>
 </section>
 
 
