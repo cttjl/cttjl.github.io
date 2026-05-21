@@ -416,35 +416,46 @@ s.parentNode.insertBefore(bp,s);
         </div>
 
         <!-- 右侧：地图嵌入 -->
-<!-- 联系我们 - 地图（固定定位：致优网络维护中心） -->
-<!-- 右侧：地图嵌入（完全保留你原来的样式） -->
+<!-- 右侧：地图嵌入（和你原来的样式完全一致） -->
 <div style="width: 550px; height: 450px; border-radius: 8px; overflow: hidden; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
-  <!-- 地图容器 -->
+  <!-- 地图容器：id="map" 必须存在 -->
   <div id="map" style="width:100%;height:100%;"></div>
 </div>
 
+<!-- 百度地图API JS（AK已填好） -->
 <script src="https://api.map.baidu.com/api?v=3.0&ak=E23K2yhoD8mnRgewjSF2wi0J9un5BKJ9"></script>
 <script>
-  // 创建地图实例
+  // 1. 创建地图实例
   var map = new BMapGL.Map("map");
-  // 固定定位：致优网络维护中心（十堰）
+
+  // 2. 致优网络维护中心 坐标（十堰市）
   var point = new BMapGL.Point(110.7918, 32.6267);
-  // 初始化地图，设置中心点坐标和地图级别
+
+  // 3. 初始化地图：中心点 + 缩放级别
   map.centerAndZoom(point, 18);
   map.enableScrollWheelZoom(true);
 
-  // 创建标注
+  // 4. 添加标注
   var marker = new BMapGL.Marker(point);
   map.addOverlay(marker);
 
-  // 信息窗口（点击标注弹出）
-  var infoWindow = new BMapGL.InfoWindow(`
-    <div style="padding:10px;">
-      <h4 style="margin:0 0 5px;">致优网络维护中心</h4>
-      <p style="margin:0;font-size:14px;">地址：湖北省十堰市</p>
-    </div>
-  `);
-  marker.openInfoWindow(infoWindow);
+  // 5. 信息窗口（点击标注弹出）
+  var infoWindow = new BMapGL.InfoWindow(
+    '<div style="padding:10px;">' +
+      '<h4 style="margin:0 0 5px;">致优网络维护中心</h4>' +
+      '<p style="margin:0;font-size:14px;">地址：湖北省十堰市</p>' +
+    '</div>'
+  );
+
+  // 6. 页面加载完成后，自动打开信息窗口
+  map.addEventListener("load", function() {
+    map.openInfoWindow(infoWindow, point);
+  });
+
+  // 7. 点击标注时，打开信息窗口
+  marker.addEventListener("click", function() {
+    map.openInfoWindow(infoWindow, point);
+  });
 </script>
 </section>
 
